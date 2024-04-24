@@ -1,0 +1,72 @@
+---
+// import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+  <div class="stack gap-2 lg:gap-4 quienesSomos">
+    <h4 class="title text-blue-500">¡Importante noticia!</h4>
+    <p class="text-center">
+      En Surnet, asumimos la responsabilidad del aumento del IVA al 15%.
+      Seguimos comprometidos con brindarte el mejor servicio sin que afecte tu
+      bolsillo. ¡Tu conexión sigue siendo nuestra prioridad!
+    </p>
+  </div>
+  <div class="stack gap-2 lg:gap-4 imgNoIva">
+    <img src="../../public/assets/noIVA.jpeg" alt="Asumimos el Iva del 15%" />
+  </div>
+</section>
+
+<style>
+  .box {
+    /* border: 1px solid var(--gray-800); */
+    margin: 1rem;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: var(--gray-999_40);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .skills h2 {
+    font-size: var(--text-lg);
+  }
+
+  .skills p {
+    color: var(--gray-400);
+  }
+  .quienesSomos{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .imgNoIva {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  img {
+    width: 75%;
+  }
+  @media (min-width: 50em) {
+    .box {
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+
+    .skills h2 {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>
