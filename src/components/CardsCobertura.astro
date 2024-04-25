@@ -1,0 +1,141 @@
+<section>
+  <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8 rounded-lg">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 rounded-lg">
+      <div class=" cobertura p-8 md:p-12 lg:px-16 lg:py-24 rounded-xl">
+        <div class="  mx-auto max-w-xl text-center">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">Cobertura</h2>
+          <div class="mt-4 md:mt-8 rounded-xl">
+            <a
+              href="#"
+              class="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400">
+              Consultanos
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <!-- <div class="grid grid-cols-2 gap-1 md:grid-cols-1 lg:grid-cols-2 b "> -->
+        <div class="card">
+          <div class="content">
+            <p class="heading">San Juan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <p class="heading">Carapungo</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <p class="heading">Llano Grande</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <p class="heading">Condado</p>
+          </div>
+        </div>
+        <!-- <div class="sectores  text-center text-3xl">Carapungo</div>
+            <div class="sectores  text-center text-3xl ">Carapungo</div>
+            <div class="sectores  text-center text-3xl bg-opacity-10">Condado</div>
+            <div class="sectores  text-center text-3xl align-bottom ">Llano Grande</div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+    .cobertura{
+      /* background-image:   conic-gradient(at left bottom, rgb(240, 171, 252), rgb(74, 222, 128), rgb(190, 18, 60)) */
+        background-image: radial-gradient(rgb(97, 169, 250), rgb(255, 255, 255));
+    }
+  .sectores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow:
+      rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* padding: 32px; */
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* color: #e8e8e8; */
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .content .para {
+    line-height: 1.5;
+  }
+
+  .content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    z-index: -1;
+    /* transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); */
+  }
+
+  /* .card:hover::before {
+    width: 100%;
+  } */
+
+  /* .card:hover {
+    box-shadow: none;
+  } */
+
+  .card:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+
+  .content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+
+  /* .content .btn:active {
+    box-shadow: none;
+  } */
+</style>
