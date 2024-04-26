@@ -1,142 +1,189 @@
-<section>
-  <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8 rounded-lg">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 rounded-lg">
-      <div class="cobertura p-8 md:p-12 lg:px-16 lg:py-24 rounded-xl">
-        <div class="mx-auto max-w-xl text-center">
-          <h2 class="text-2xl font-bold text-black md:text-3xl">Cobertura</h2>
-          <div class="mt-4 md:mt-8 rounded-xl">
-            <a
-              href="#"
-              class="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400">
-              Consultanos
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class=""> -->
-        <div class="grid grid-cols-2 gap-1 md:grid-cols-1 lg:grid-cols-2 b ">
-        <div class="card">
-          <div class="content">
-            <p class="heading">San Juan</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <p class="heading">Carapungo</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <p class="heading">Llano Grande</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <p class="heading">Condado</p>
-          </div>
-        </div>
-        <!-- <div class="sectores  text-center text-3xl">Carapungo</div>
-            <div class="sectores  text-center text-3xl ">Carapungo</div>
-            <div class="sectores  text-center text-3xl bg-opacity-10">Condado</div>
-            <div class="sectores  text-center text-3xl align-bottom ">Llano Grande</div> -->
-      </div>
-    </div>
+<div class="sectionCobertura m-16 grid grid-cols-1 sm:grid-cols-2">
+  <div class=" cobertura">
+    <h4>Sectores de Cobertura</h4>
+    <p>
+      Somos una empresa en constante expansión para poder llegar a más sectores y
+      que puedan disfrutar del mejor servicio de internet por fibra óptica, por lo
+      cual detallamos a continuación los sectores en los que disponemos de
+      cobertura actualmente
+    </p>
   </div>
-</section>
 
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+  
+    <button class="button mb-4">
+      <span class="button_lg">
+        <span class="button_sl"></span>
+        <span class="button_text">San Juan</span>
+      </span>
+    </button>
+    <button class="button mb-4">
+      <span class="button_lg">
+        <span class="button_sl"></span>
+        <span class="button_text">Llano Grande</span>
+      </span>
+    </button>
+    <button class="button mb-4">
+      <span class="button_lg">
+        <span class="button_sl"></span>
+        <span class="button_text">Condado</span>
+      </span>
+    </button>
+    <button class="button mb-4">
+      <span class="button_lg">
+        <span class="button_sl"></span>
+        <span class="button_text">Carapungo</span>
+      </span>
+    </button>
+  </div>
+  
+  
+</div>
+  
 <style>
-  .cobertura {
-    background: #d7d7d7;
-background: -webkit-radial-gradient(circle, #d7d7d7 0%, #ffffff 100%);
-background: radial-gradient( #d7d7d7 0%, #ffffff 100%);
+    @media screen and (max-width: 640px) {
+      .sectionCobertura{
+        margin: 15px;
+      }
+      .sectionCobertura h4{
+        display: flex;
+        text-align: center
+      }
+    }
+  .cobertura{
+    margin-right: 50px;
+    margin-left: 50px;
   }
-  .sectores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow:
-      rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  @media screen and (max-width: 640px) {
+    .cobertura {
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
+}
+  
+  .cobertura h4{
+    margin-bottom: 25px;
   }
-
-  .card {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 100%; */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    /* padding: 32px; */
-    margin: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    /* color: #e8e8e8; */
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .content .heading {
-    font-weight: 700;
-    font-size: 32px;
-  }
-
-  .content .para {
-    line-height: 1.5;
-  }
-
-  .content .btn {
-    color: #e8e8e8;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     border: none;
+    background: none;
+    color: #0f1923;
     cursor: pointer;
-    background: linear-gradient(-45deg, #29eaf8 0%, #0f77ff 100%);
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 8px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.15s ease;
+    /* margin-right: 90px; */
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
-  .card::before {
+  .button::before,
+  .button::after {
     content: "";
+    display: block;
     position: absolute;
+    right: 0;
     left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7d8082;
+    transition: all 0.15s ease;
+  }
+
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+
+  .button::after {
     bottom: 0;
-    width: 5px;
-    height: 100%;
-    background: linear-gradient(-45deg, #29eaf8 0%, #0f77ff 100%);
-    z-index: -1;
-    /* transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); */
+    border-top-width: 0;
   }
 
-  /* .card:hover::before {
-    width: 100%;
-  } */
-
-  /* .card:hover {
-    box-shadow: none;
-  } */
-
-  .card:hover .btn {
-    color: #212121;
-    background: #e8e8e8;
+  .button:active,
+  .button:focus {
+    outline: none;
   }
 
-  .content .btn:hover {
-    outline: 2px solid #e8e8e8;
-    background: transparent;
-    color: #e8e8e8;
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
   }
 
-  /* .content .btn:active {
-    box-shadow: none;
-  } */
+  .button:active::before {
+    top: 3px;
+  }
+
+  .button:active::after {
+    bottom: 3px;
+  }
+
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+
+  .button_lg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+
+  .button_lg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all 0.2s ease;
+  }
+
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #0c3388;
+    transform: skew(-15deg);
+    transition: all 0.2s ease;
+  }
+
+  .button_text {
+    position: relative;
+  }
+
+  .button:hover {
+    color: #0f1923;
+  }
+
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
 </style>
