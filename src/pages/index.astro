@@ -1,22 +1,24 @@
 ---
 import Hero from "../components/Hero.astro";
-import InternetPlans from "../components/InternetPlans.astro";
+import InternetPlans from "../components/Internet-Plans.astro";
 import NoIva from "../components/NoIva.astro";
 import QuienesSomos from "../components/QuienesSomos.astro";
 import ValoresEmpresariales from "../components/ValoresEmpresariales.astro";
 import CardsCobertura from "../components/Cards-Sectores-Cobertura.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/BaseLayout.astro";
+import PreguntasFrecuentes from "../components/Preguntas-Frecuentes.astro";
 ---
 
 <Layout title="Surnet">
   <header>
     <Hero/>
-    <QuienesSomos/>
+    <QuienesSomos id="quienes-somos-surnet"/>
     <NoIva/>
     <ValoresEmpresariales/>
-    <InternetPlans/>
+    <InternetPlans />
     <CardsCobertura/>
+    <PreguntasFrecuentes/>
     <Footer/>
   </header>
   <main>
