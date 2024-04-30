@@ -1,51 +1,134 @@
 ---
-import CardsSectores from "./Sectores-Cobertura.astro";
-
-const sectores = ["San Juan", "Llano Grande", "Condado", "Carapungo"];
+const {title} = Astro.props
 ---
-<div class=" max-w-screen-xl mx-auto sectionCobertura m-16 grid grid-cols-1 sm:grid-cols-2">
-  <div class="cobertura">
-    <h4>Sectores de Cobertura</h4>
-    <p>
-      Somos una empresa en constante expansión para poder llegar a más sectores
-      y que puedan disfrutar del mejor servicio de internet por fibra óptica,
-      por lo cual detallamos a continuación los sectores en los que disponemos
-      de cobertura actualmente
-    </p>
-  </div>
+<button id="cobertura" class=" button mb-4">
+    <span class="button_lg">
+      <span class="button_sl" />
+      <span class="button_text">{title}</span>
+    </span>
+  </button>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-    {
-      sectores.map((sector) => (
-        <CardsSectores title={sector}/>
-      ))
-    }
-  </div>
-</div>
-
+  
 <style>
-  @media screen and (max-width: 640px) {
-    .sectionCobertura {
-      margin: 15px;
+    .button {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      background: none;
+      color: #0f1923;
+      cursor: pointer;
+      position: relative;
+      padding: 8px;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.15s ease;
+      /* margin-right: 90px; */
+      margin-left: 25px;
+      margin-right: 25px;
     }
-    .sectionCobertura h4 {
-      display: flex;
-      text-align: center;
+  
+    .button::before,
+    .button::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: calc(50% - 5px);
+      border: 1px solid #7d8082;
+      transition: all 0.15s ease;
     }
-  }
-  .cobertura {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  @media screen and (max-width: 640px) {
-    .cobertura {
-      margin-right: 5px;
-      margin-left: 5px;
-      margin-bottom: 25px;
+  
+    .button::before {
+      top: 0;
+      border-bottom-width: 0;
     }
-  }
-
-  .cobertura h4 {
-    margin-bottom: 25px;
-  }
- </style>
+  
+    .button::after {
+      bottom: 0;
+      border-top-width: 0;
+    }
+  
+    .button:active,
+    .button:focus {
+      outline: none;
+    }
+  
+    .button:active::before,
+    .button:active::after {
+      right: 3px;
+      left: 3px;
+    }
+  
+    .button:active::before {
+      top: 3px;
+    }
+  
+    .button:active::after {
+      bottom: 3px;
+    }
+  
+    .button_lg {
+      position: relative;
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #0f1923;
+      overflow: hidden;
+      box-shadow: inset 0px 0px 0px 1px transparent;
+    }
+  
+    .button_lg::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 2px;
+      background-color: #0f1923;
+    }
+  
+    .button_lg::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 4px;
+      height: 4px;
+      background-color: #0f1923;
+      transition: all 0.2s ease;
+    }
+  
+    .button_sl {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -1px;
+      left: -8px;
+      width: 0;
+      background-color: #0c3388;
+      transform: skew(-15deg);
+      transition: all 0.2s ease;
+    }
+  
+    .button_text {
+      position: relative;
+    }
+  
+    .button:hover {
+      color: #0f1923;
+    }
+  
+    .button:hover .button_sl {
+      width: calc(100% + 15px);
+    }
+  
+    .button:hover .button_lg::after {
+      background-color: #fff;
+    }
+  </style>

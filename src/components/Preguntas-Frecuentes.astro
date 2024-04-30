@@ -2,12 +2,16 @@
 import CardsPreguntasFrecuentes from "./Cards-Preguntas-Frecuentes.astro";
 const allQuestion = await Astro.glob("../Content/Preguntas-Frecuentes/*.md");
 ---
-<section class="preguntas-frecuentes max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px8 lg:py-16  ">
-  <div class="space-y-4">
-    {
-     allQuestion.map((item) => (
-      <CardsPreguntasFrecuentes title={item?.frontmatter?.title} informacion={item?.frontmatter?.informacion} />
-     )) 
-    }
+<section class="preguntas-frecuentes max-w-screen-xl  py-8  sm:px-4 mx-auto  sm:py-12 lg:px-72 lg:py-16  ">
+  <div class="mx-auto">
+
+    <h4 class="text-center pb-8">Preguntas Frecuentes</h4>
+    <div class="space-y-4 px-4">
+      {
+       allQuestion.map((item) => (
+        <CardsPreguntasFrecuentes title={item?.frontmatter?.title} informacion={item?.frontmatter?.informacion} />
+       )) 
+      }
+    </div>
   </div>
 </section>
