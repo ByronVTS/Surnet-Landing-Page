@@ -9,7 +9,7 @@ const { title, informacion } = Astro.props;
 
 <details class="sm:px-4 group [&_summary::-webkit-details-marker]:hidden">
   <summary
-    class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-100 p-4 text-gray-900">
+    class=" preguntas flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4 ">
     <h6 class="font-medium">{title}</h6>
 
     <svg
@@ -26,7 +26,13 @@ const { title, informacion } = Astro.props;
     </svg>
   </summary>
 
-  <p class="mt-4 px-4 leading-relaxed text-gray-700">
+  <p class="mt-4 px-4 leading-relaxed ">
     {informacion}
   </p>
 </details>
+
+<style>
+  .preguntas{
+    background-color: var(--gray-900);
+  }
+</style>

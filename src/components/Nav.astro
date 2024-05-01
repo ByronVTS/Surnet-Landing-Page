@@ -1,4 +1,8 @@
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+---
+import ThemToggle from "./ThemToggle.astro"
+---
+
+<nav class=" border-gray-200 theme-dark:bg-gray-900">
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a
@@ -10,20 +14,23 @@
         alt="Logo"
       />
       <span
-        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+        class="self-center text-2xl font-semibold whitespace-nowrap theme-dark:text-white"
         ></span
       >
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <div class="theme-toggle">
+        <ThemToggle />
+      </div>
       <button
         type="button"
-        class="text-white bg-green-700   hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-500 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+        class="text-white bg-green-700   hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-500 font-medium rounded-lg text-sm px-4 py-2 text-center theme-dark:bg-green-600 theme-dark:hover:bg-green-700 theme-dark:focus:ring-green-800"
         >Whatsapp</button
       >
       <button
         data-collapse-toggle="navbar-cta"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 theme-dark:text-gray-400 theme-dark:hover:bg-gray-700 theme-dark:focus:ring-gray-600"
         aria-controls="navbar-cta"
         aria-expanded="false">
         <!-- <span class="sr-only">Open main menu</span> -->
@@ -46,46 +53,48 @@
       class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       id="navbar-cta">
       <ul
-        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  theme-dark:bg-gray-800 md:theme-dark:bg-gray-900 theme-dark:border-gray-700">
+      <!-- <ul
+        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white theme-dark:bg-gray-800 md:theme-dark:bg-gray-900 theme-dark:border-gray-700"> -->
         <li>
           <a
             href="#inicio"
-            class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+            class="block py-2 px-3 md:p-0  bg-blue-700 rounded md:bg-transparent  "
             aria-current="page">Inicio</a
           >
         </li>
         <li>
           <a
             href="#quienes-somos"
-            class=" nav-link scrollto active block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class=" nav-link scrollto active block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:theme-dark:hover:text-blue-500 theme-dark:text-white theme-dark:hover:bg-gray-700 theme-dark:hover:text-white md:theme-dark:hover:bg-transparent theme-dark:border-gray-700"
             >Quienes somos</a
           >
         </li>
         <li>
           <a
             href="#noticia"
-            class=" nav-link scrollto active block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class=" nav-link scrollto active block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:theme-dark:hover:text-blue-500 theme-dark:text-white theme-dark:hover:bg-gray-700 theme-dark:hover:text-white md:theme-dark:hover:bg-transparent theme-dark:border-gray-700"
             >Noticias</a
           >
         </li>
         <li>
           <a
             href="#valores"
-            class=" nav-link scrollto active block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class=" nav-link scrollto active block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:theme-dark:hover:text-blue-500 theme-dark:text-white theme-dark:hover:bg-gray-700 theme-dark:hover:text-white md:theme-dark:hover:bg-transparent theme-dark:border-gray-700"
             >Valores</a
           >
         </li>
         <li>
           <a
             href="#planes-internet"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class="block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:theme-dark:hover:text-blue-500 theme-dark:text-white theme-dark:hover:bg-gray-700 theme-dark:hover:text-white md:theme-dark:hover:bg-transparent theme-dark:border-gray-700"
             >Planes</a
           >
         </li>
         <li>
           <a
             href="#cobertura"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class="block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:theme-dark:hover:text-blue-500 theme-dark:text-white theme-dark:hover:bg-gray-700 theme-dark:hover:text-white md:theme-dark:hover:bg-transparent theme-dark:border-gray-700"
             >Cobertura</a
           >
         </li>
@@ -95,40 +104,7 @@
 </nav>
 
 <style>
-
-/* .bg-whatsapp-700{
-  background-color: #25D366
-}
-.bg-whatsapp-800{
-  background-color: #083f1cab;
-}
-.bg-whatsapp-800{
-  background-color: #083f1cab;
-}
-.ring-whatsapp-300{
-  background-color: #87e4a9;
-} */
-/* Colores principales */
-.bg-whatsapp-700 {
-  background-color: #25D366; /* Verde principal */
-}
-
-.bg-whatsapp-800 {
-  background-color: #168c12; /* Verde secundario */
-}
-
-/* Colores en modo oscuro */
-.dark:bg-whatsapp-600 {
-  background-color: #04461f; /* Verde oscuro */
-}
-
-.dark:hover:bg-whatsapp-700 {
-  background-color: #0d713c; /* Verde oscuro en hover */
-}
-
-.dark:focus:ring-whatsapp-800 {
-  box-shadow: 0 0 0 3px #128c4f; /* Sombra de enfoque en verde secundario */
-}
-
-
+  a{
+    color: var(--gray-100);
+  }
 </style>

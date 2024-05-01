@@ -5,7 +5,7 @@
     - @tailwindcss/forms
 -->
 
-<section class="bg-gray-100">
+<section class="  formulario-contacto">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
         <div class="lg:col-span-2 lg:py-12">
@@ -20,12 +20,12 @@
           </div>
         </div>
   
-        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+        <div class="rounded-lg formulario p-8 shadow-lg lg:col-span-3 lg:p-12">
           <form action="#" class="space-y-4">
             <div>
               <label class="sr-only" for="name">Name</label>
               <input
-                class="w-full rounded-lg border-gray-900 p-3 text-sm"
+                class="w-full rounded-lg border-gray-900 p-3 text-sm "
                 placeholder="Nombre"
                 type="text"
                 id="name"
@@ -58,7 +58,7 @@
               <div>
                 <label
                   for="Option1"
-                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-gray-500 has-[:checked]:text-white"
                   tabindex="0"
                 >
                   <input class="sr-only" id="Option1" type="radio" tabindex="-1" name="option" />
@@ -70,7 +70,7 @@
               <div>
                 <label
                   for="Option2"
-                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-gray-500 has-[:checked]:text-white"
                   tabindex="0"
                 >
                   <input class="sr-only" id="Option2" type="radio" tabindex="-1" name="option" />
@@ -82,7 +82,7 @@
               <div>
                 <label
                   for="Option3"
-                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-gray-500 has-[:checked]:text-white"
                   tabindex="0"
                 >
                   <input class="sr-only" id="Option3" type="radio" tabindex="-1" name="option" />
@@ -116,3 +116,15 @@
       </div>
     </div>
   </section>
+
+  <style>
+    .formulario-contacto{
+      background-color: var(--gray-999);
+    }
+    .formulario{
+      background-color: var(--gray-800);
+    }
+    input,textarea{
+      background-color: var(--gray-900)
+    }
+  </style>
